@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Absorbentes Industriales de Colombia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('Inicio')">Inicio</a></li>
+            <li><a href="#" onclick="showSection('Productos')">Productos</a></li>
+            <li><a href="#" onclick="showSection('Nosotros')">Nosotros</a></li>
+            <li><a href="#" onclick="showSection('Contacto')">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div id="Inicio" class="section">
+    <h1>Absorbentes Industriales de Colombia</h1>
+    <p class="slogan">"Reviviendo mares y rios"</p>
+    <img src="images/fondo1.png">
+  </div>
+ 
+  <div id="Productos" class="section">
+    <section class="products-section">
+      <h2>Nuestros Productos</h2>
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-info">
+            <h3>Fullsorb AC - V - 50 Universal</h3>
+            <p>Es una mezcla de arcillas, carbón y diatomitas activado (diatomeas) de pH neutro. Perfecto para la absorción de ácidos fuertes, hidrocarburos, entre otros.</p>
+            <h3>Precio: $50.000</h3>
+            <button class="buy-button" onclick="window.location.href='https://wa.link/93mq95'">Comprar ahora</button>
+          </div>
+          <div class="product-image">
+            <img src="images/images.producto1.jpeg" >
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-info">
+            <h3>Fullsorb AC - V - 51 Universal</h3>
+            <p>Mezcla de fibras naturales, biodegradable, hidrófugo, oleofilico, bioremediador. Perfecto para derrames de líquidos peligrosos.</p>
+            <h3>Precio: $50.000</h3>
+            <button class="buy-button" onclick="window.location.href='https://wa.link/93mq95'">Comprar ahora</button>
+          </div>
+          <div class="product-image">
+            <img src="images/images.producto2.jpg">
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-info">
+            <h3>Fullsobr AC - V - 52</h3>
+            <p>Polímero con múltiples aplicaciones. Puede absorber hasta cuatrocientas veces su peso de agua, dependiendo de la pureza de la misma.</p>
+            <h3>Precio: $50.000</h3>
+            <button class="buy-button" onclick="window.location.href='https://wa.link/93mq95'">Comprar ahora</button>
+          </div>
+          <div class="product-image">
+            <img src="images/images.producto3.jpg" >
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Botón flotante de chat -->
+  <div class="chat-button" onclick="toggleChatWindow()"></div>
+
+  <!-- Ventana emergente del chatbot -->
+  <div class="chat-window">
+    <div class="chat-header">
+      <h3>Chatbot</h3>
+      <button class="close-chat" onclick="closeChatWindow()">X</button>
+    </div>
+    <div class="chat-body">
+      <p>¡Hola! ¿En qué te puedo ayudar?</p>
+    </div>
+    <div class="chat-footer">
+      <input type="text" placeholder="Escribe un mensaje..." id="chat-input">
+      <button class="send-button" onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
